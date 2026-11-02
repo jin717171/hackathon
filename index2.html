@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080f26">
+  <meta name="description" content="제1회 호연고 해커톤 작품 공유회. 학생들의 문제 해결 아이디어와 완성 작품을 만나보세요.">
+  <title>제1회 호연고 해커톤 | 작품 공유회</title>
+  <style>
+    :root{--bg:#080f26;--surface:#101c38;--surface2:#162546;--line:#2a3a61;--text:#f4f7ff;--muted:#a8b8d7;--cyan:#59dff3;--violet:#978cff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:320px;background:radial-gradient(ellipse at 80% -15%,#1c3962 0%,transparent 50%),radial-gradient(ellipse at -10% 38%,#181a45 0%,transparent 42%),var(--bg);color:var(--text);font-family:system-ui,'Pretendard','Apple SD Gothic Neo','Malgun Gothic',sans-serif;word-break:keep-all}
+    a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}p{line-height:1.75}header{border-bottom:1px solid rgba(164,180,226,.14);background:#080e22df;backdrop-filter:blur(14px)}.inner{width:min(1120px,calc(100% - 36px));margin:auto}.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:16px}.wordmark{font-size:24px;letter-spacing:-.07em;font-weight:1000}.wordmark .spark{color:var(--cyan)}.top .meta{font-size:11px;letter-spacing:.06em;font-weight:800;color:#b2c5ef}.hero{padding:67px 0 44px}.eyebrow{color:var(--cyan);font-size:12px;font-weight:900;letter-spacing:.16em}.hero h1{font-size:clamp(30px,4.2vw,52px);line-height:1.23;letter-spacing:-.056em;margin:14px 0}.hero p{color:var(--muted);font-size:16px;max-width:710px;margin:0}.hero-note{display:inline-flex;border:1px solid var(--line);padding:8px 13px;border-radius:30px;margin-top:25px;font-size:12px;color:#b7c7e7;background:#122142}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin:20px 0 24px}.section-head h2{font-size:23px;letter-spacing:-.03em;margin:0}.count{color:#a9bde5;font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-bottom:75px}.card{border:1px solid var(--line);background:linear-gradient(160deg,#182648,#0f1931);border-radius:23px;overflow:hidden;box-shadow:0 16px 36px #0002;min-width:0;display:flex;flex-direction:column}.cover{height:195px;display:grid;place-items:center;background:linear-gradient(145deg,#263c67,#15233e);overflow:hidden;position:relative}.cover img{width:100%;height:100%;object-fit:cover}.cover-placeholder{font-size:52px;color:#dbe7ff}.card-content{padding:24px;display:flex;flex-direction:column;gap:12px;flex:1}.pill{border-radius:30px;display:inline-flex;width:max-content;background:#242a57;color:#c9c3ff;padding:7px 12px;font-size:12px;font-weight:900}.pill.teacher{background:#174f4a;color:#a7f5e0}.card h3{margin:0;font-size:21px;letter-spacing:-.04em}.intro{margin:0;color:#bdc9e4;white-space:pre-wrap;font-size:14px;line-height:1.72}.points{display:grid;gap:7px;margin:5px 0}.point{display:flex;align-items:flex-start;gap:9px;color:#d9e4f6;font-size:13px;line-height:1.65}.point i{display:block;width:7px;height:7px;margin-top:8px;background:#6bdfe0;border-radius:50%;flex:none}.actions{margin-top:auto;padding-top:12px}.launch{border:1px solid #6995ff;background:linear-gradient(120deg,#4d68d3,#655bd2);padding:12px 18px;border-radius:13px;display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:850;font-size:14px;min-height:46px}.launch:hover{filter:brightness(1.12)}.empty{background:#121e3a;border:1px solid var(--line);padding:66px 24px;margin:15px 0 95px;text-align:center;border-radius:24px}.empty h2{font-size:25px;letter-spacing:-.03em}.empty p{color:var(--muted)}.status{color:var(--muted);font-size:13px}.foot{border-top:1px solid var(--line);padding:25px 0 45px;color:#8295b9;font-size:12px;line-height:1.7}.hidden{display:none!important}
+    @media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.inner{width:min(100% - 28px,1120px)}.top{padding:13px 0}.wordmark{font-size:20px}.top .meta{font-size:10px}.hero{padding:41px 0 29px}.hero p{font-size:14px}.grid{grid-template-columns:1fr;gap:13px;padding-bottom:45px}.cover{height:188px}.card-content{padding:20px}.empty{margin-bottom:55px;padding:48px 16px}}
+  </style>
+</head>
+<body>
+  <header><div class="inner top"><div class="wordmark">hackath<span class="spark">✳</span>n</div><div class="meta">HOYEON HIGH SCHOOL · 2026</div></div></header>
+  <main class="inner">
+    <section class="hero"><div class="eyebrow">PROJECT SHOWCASE · HOYEON HACKATHON</div><h1 id="page-title">제1회 호연고 해커톤<br>작품 공유회</h1><p id="page-subtitle">학생들이 발견한 문제와 직접 만든 작품을 소개합니다.</p><div class="hero-note">학생 이름·개인 평가·기획서 원문은 공개하지 않습니다.</div></section>
+    <div id="loading" class="status" role="status">작품을 불러오고 있어요…</div>
+    <section id="gallery-section" class="hidden" aria-label="공개 작품"><div class="section-head"><h2>학생들의 아이디어</h2><span class="count" id="work-count"></span></div><div class="grid" id="project-grid"></div></section>
+    <section id="empty-section" class="empty hidden"><h2>작품 공유회 준비 중</h2><p>공개가 시작되면 이곳에서 모둠별 작품을 만나볼 수 있어요.</p></section>
+    <section id="error-section" class="empty hidden"><h2>작품을 불러오지 못했어요</h2><p>잠시 후 새로고침해 주세요.</p><button class="launch" onclick="location.reload()">다시 시도</button></section>
+  </main>
+  <footer class="foot"><div class="inner">제1회 호연고 해커톤 · 작품 공유회<br>공개 내용은 교육활동 결과를 소개하기 위한 것으로, 학생의 모든 기획 자료를 포함하지 않습니다.</div></footer>
+  <script>
+  const SUPABASE_URL='https://sbhqcopyehyzvptwzikp.supabase.co';
+  const SUPABASE_PUBLIC_KEY='sb_publishable_8Lj0qDeo4H5MO_LSd4i2Ww_qnuhRq5k';
+  const $=id=>document.getElementById(id);
+  const escapeHtml=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const safeLink=s=>/^https:\/\/[^\s<>"']+$/i.test(String(s||''))?s:'';
+  const safeCover=s=>/^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(String(s||''))?s:'';
+  function publicText(value,fallback){const t=String(value||'').trim();return (!t||/학부모|parent/i.test(t))?fallback:t}
+  function hide(id){$(id).classList.add('hidden')}
+  function show(id){$(id).classList.remove('hidden')}
+  function createCard(item){
+    const n=Number(item.team),teacher=n===10,link=safeLink(item.url),cover=safeCover(item.cover);
+    const card=document.createElement('article');card.className='card';
+    card.innerHTML=`<div class="cover">${cover?`<img alt="${escapeHtml(item.title)} 대표 이미지" loading="lazy" src="${escapeHtml(cover)}">`:`<span class="cover-placeholder" aria-hidden="true">${teacher?'✦':['◈','✳','◇','◎','✿','☷','⬡','✧','▣'][n-1]||'✦'}</span>`}</div><div class="card-content"><span class="pill ${teacher?'teacher':''}">${teacher?'10모둠 · 교사 예시':n+'모둠'}</span><h3>${escapeHtml(item.title)}</h3><p class="intro">${escapeHtml(item.overview)}</p><div class="points">${[item.pointOne,item.pointTwo].filter(x=>String(x||'').trim()).map(s=>`<div class="point"><i aria-hidden="true"></i><span>${escapeHtml(s)}</span></div>`).join('')}</div><div class="actions">${link?`<a class="launch" target="_blank" rel="noopener noreferrer" href="${escapeHtml(link)}">웹앱 실행하기 ↗</a>`:''}</div></div>`;
+    return card;
+  }
+  async function loadPublic(){
+    try{
+      const res=await fetch(SUPABASE_URL+'/rest/v1/rpc/h_parent_gallery_api',{method:'POST',headers:{'Content-Type':'application/json','apikey':SUPABASE_PUBLIC_KEY},body:JSON.stringify({p_action:'public',p_token:null,p_data:{}})});
+      if(!res.ok)throw new Error('HTTP '+res.status);
+      const data=await res.json();
+      hide('loading');
+      if(!data.open){show('empty-section');return}
+      $('page-title').textContent=publicText(data.settings?.heading,'제1회 호연고 해커톤 작품 공유회');
+      $('page-subtitle').textContent=publicText(data.settings?.subheading,'학생들이 발견한 문제와 직접 만든 작품을 소개합니다.');
+      const items=Array.isArray(data.items)?data.items:[];
+      if(items.length===0){show('empty-section');return}
+      $('work-count').textContent='공개 작품 '+items.length+'개';
+      $('project-grid').replaceChildren(...items.map(createCard));
+      show('gallery-section');
+    }catch(error){console.warn('공개 페이지 로딩 실패',error);hide('loading');show('error-section')}
+  }
+  loadPublic();
+  </script>
+</body>
+</html>
